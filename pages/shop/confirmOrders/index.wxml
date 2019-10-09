@@ -1,0 +1,74 @@
+<!--确认订单pages/shop/confirmOrders/index.wxml-->
+<view class='container confirm_order_all' style='border-top:solid 1rpx #eee'>
+  <navigator url='{{goods_to_address}}' class='adress_gl'>
+     <view class='adress_main'>
+        <text class='iconfont iconadress'></text>
+        <view class='name_tel_adr_grp'>
+            <view>
+                <text>{{name}}</text>
+                <text>{{telephone}}</text>
+            </view>
+            <view><text>{{adress}}</text></view>
+        </view>
+     </view>
+     <text class='iconfont iconnext'></text>
+  </navigator>
+  <view class='line'></view>
+  <view class='goods_mes_grp'>
+     <view class='goods_mes_in'>
+        <view class='goods_abstract'>
+            <image src="{{goods_img}}"></image>
+            <view>
+                <text>{{goodsName}}</text>
+                <view>
+                   <text wx:for="{{goodsAllType}}" wx:key="goodsAllType">{{item.type}}：{{item.name}}{{(goodsAllType.length !== (index+1)? " / " : " ")}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='goods_value_grp'>
+           <text>¥{{oneValue * goodsNum}}</text>
+           <text>X{{goodsNum}}</text>
+        </view>
+     </view>
+     <view class='anothor_sub_grp'>
+        <navigator url='' class='navigator_one'>
+           <text>店铺优惠</text>
+           <view>
+               <text>{{youHui}}</text>
+               <text class='iconfont iconnext'></text>
+           </view>
+        </navigator>
+         <navigator url='' class='navigator_one'>
+           <text>开具发票</text>
+           <view>
+               <text>{{fapiao}}</text>
+               <text class='iconfont iconnext'></text>
+           </view>
+        </navigator>
+        <view  class='navigator_one'>
+           <text>买家留言</text>
+           <view>
+               <input  maxlength="50" placeholder="50字以内（选填）"  placeholder-style="color:#999"/>
+           </view>
+        </view>
+        <view  class='navigator_one'>
+           <text></text>
+           <view class='total'>
+               <text>共{{goodsNum}}件，</text>
+               <text> 小计：</text>
+               <text>¥{{oneValue * goodsNum}}</text>
+           </view>
+        </view>
+     </view>
+  </view>
+  <view class='submit_grp'>
+     <view  class='navigator_one'>
+        <view class='total'>
+            <text>共{{goodsNum}}件，</text>
+            <text> 小计：</text>
+            <text>¥{{oneValue * goodsNum}}</text>
+        </view>
+      </view>
+      <view class='submit_btn'><text>提交订单</text></view>
+  </view>
+</view>

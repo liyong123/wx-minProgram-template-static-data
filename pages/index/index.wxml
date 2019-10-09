@@ -1,0 +1,46 @@
+<!--首页index.wxml-->
+<view class="container">
+   <view class='header_bg'>
+   </view>
+   <view class='other_grp'>
+     <!-- 轮播 -->
+     <diy-banner dataList="{{bannerData}}"></diy-banner>
+     <!-- 各个代表模块 -->
+     <view class='daibiao_module_grp'>
+        <view class='daibiao_one' wx:for="{{daibiaoModuleData}}" wx:key="daibiaoModule">
+          <image mode="widthFix" src='{{item.imgUrl}}' catchtap="navigationTo" data-url="{{ item.linkUrl }}"></image>
+          <text>{{item.name}}</text>
+        </view>
+     </view>
+     <view class='huise_bg'></view>
+     <!-- 专家专栏 -->
+     <view class='zhuanjia_module_grp'>
+        <view class='module_title_pub'>
+          <text>专家专栏</text>
+          <navigator to="">更多 >></navigator>
+        </view>
+        <view class='zhuanjia_area'>
+         
+            <navigator class='zhuanjia_one' wx:for="{{expertDatas}}" wx:key="zhuanjia_one">
+            
+               <image src='{{item.imgUrl}}'></image>
+               <view class='zhuanjia_one_font' style='width:{{zhuajiaMessageWidth}}'>
+                   <view class='zhuanjia_one_title'>{{item.title}}</view>
+                   <view class='zhuanjia_one_abstract'>{{item.abstract}}</view>
+                   <view class='zhuanjia_one_date_grp'>
+                     <text>{{item.date}}</text>
+                     <text>来源：{{item.source}}</text>
+                   </view>
+               </view>
+           
+            </navigator>
+          
+        </view>
+        <navigator to='' class='toMore' style='margin-bottom: 120rpx'>
+           点击查看更多>>
+        </navigator>
+     </view>
+   </view>
+</view>
+
+<tab-bar pagesMenu = '{{pagesMenu}}'></tab-bar> 

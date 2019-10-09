@@ -1,0 +1,23 @@
+<!--商城首页pages/shop/index.wxml-->
+<view class='container'>
+    <view class='tab_grp'>
+        <view class='tab_grp_in'>
+          <tab_qie tabData="{{tabData}}" bind:myEvent= "onMyEvent"></tab_qie>
+        </view>
+    </view>
+    <view class='shop_goods_grp'>
+        <view class='shop_goods_one' wx:for="{{goodsData}}" wx:key="goodsData">
+           <image src='{{item.imgUrl}}'></image>
+           <view class='goods_abstract'>
+             <text>{{item.abstract}}</text>
+           </view>
+           <view class='goods_value_grp'>
+               <text>¥{{item.value}}</text>
+               <navigator url='{{item.goodsLink}}'><text>去购买</text></navigator>
+           </view>
+        </view>
+    </view>
+</view>
+
+<tab-bar pagesMenu = '{{pagesMenu}}'></tab-bar> 
+

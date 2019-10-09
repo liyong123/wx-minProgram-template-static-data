@@ -1,0 +1,88 @@
+/* common.wxss */
+@import "/utils/common.wxss";
+
+page {
+  background: #fff;
+}
+.container {
+  margin-bottom: 100rpx
+}
+/* 灰色长条 */
+.huise_bg{
+  margin-top: 20rpx;
+  height: 20rpx;
+  background-color:#efefef;
+}
+/* 查看更多 */
+.toMore {
+  font-size: 26rpx;
+  color: #c1c1c1;
+  text-align: center;
+  margin: 20rpx 0
+}
+.container .navigator-hover {
+  background-color: transparent;
+}
+.bottom_filler {
+  height: 120rpx
+}
+/* 返回顶部 */
+.back_top {
+  position: fixed;
+  bottom: 150rpx;
+  z-index: 10;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  border: 1rpx solid #eee;
+}
+
+.back_top .icontop {
+  color: #666;
+  display: block;
+  text-align: center;
+  line-height: 66rpx;
+  font-size: 42rpx;
+}
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';  /* project id 1424688 */
+  src: url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.eot');
+  src: url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1424688_9fgcj9s3ux.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconnext:before {
+    content: "\e642";
+}
+.iconclose:before {
+    content: "\e644";
+}
+.iconshare:before {
+    content: "\e645";
+}
+.icontop:before {
+    content: "\e646";
+}
+.iconadress:before {
+    content: "\e64a";
+}
+.iconedit-:before {
+    content: "\e64c";
+}
+.icondelete:before {
+    content: "\e64b";
+}

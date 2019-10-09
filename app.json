@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/temporary/index",
+    "pages/index/index",
+    "pages/index/expert/index",
+    "pages/shop/index",
+    "pages/shop/goodsDetail/index",
+    "pages/shop/confirmOrders/index",
+    "pages/user/index",
+    "pages/user/myState/index",
+    "pages/user/myMessage/index",
+    "pages/user/myAddress/index",
+    "pages/user/myAddress/newAddress/index",
+    "pages/login/login",
+    "pages/echarts/index" 
+  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f93436",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

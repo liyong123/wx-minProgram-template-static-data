@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+     "diy-banner": "../../component/banner/banner",
+     "tab-bar": "../../component/tabbar/tabbar"
+  }
+}
