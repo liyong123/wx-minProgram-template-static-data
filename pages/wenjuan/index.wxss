@@ -1,0 +1,17 @@
+/* pages/wenjuan/index.wxss */
+.tip_grp {
+  display: flex;
+  border-top: solid 1rpx #eee;
+  padding: 25rpx 30rpx;
+  justify-content: center
+  
+}
+.tip_grp text:first-child {
+  margin-right: 10rpx;
+  color: #fa364b;
+  font-size: 32rpx;
+}
+.tip_grp text:last-child {
+  font-size: 24rpx;
+  color: #aaa;
+}

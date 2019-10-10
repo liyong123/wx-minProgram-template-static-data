@@ -12,7 +12,9 @@
     "pages/user/myAddress/index",
     "pages/user/myAddress/newAddress/index",
     "pages/login/login",
-    "pages/echarts/index" 
+    "pages/echarts/index",
+    "pages/jiaqun/index",
+    "pages/wenjuan/index"
   
   ],
   "window": {

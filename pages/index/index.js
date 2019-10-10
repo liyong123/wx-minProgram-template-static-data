@@ -8,10 +8,10 @@ Page({
     pagesMenu: [],
     // 轮播数据
     bannerData:[ 
-      { linkUrl: '/pages/user/index', imgUrl: '../../image/banner_01.png'},
-      { linkUrl: '/pages/user/index', imgUrl: '../../image/banner_02.png' },
-      { linkUrl: '/pages/user/index', imgUrl: '../../image/banner_03.png' },
-      { linkUrl: '/pages/user/index', imgUrl: '../../image/banner_04.png' }
+      { linkUrl: '/pages/wenjuan/index?type=1', imgUrl: '../../image/banner_01.png'},
+      { linkUrl: '/pages/wenjuan/index?type=2', imgUrl: '../../image/banner_02.png' },
+      { linkUrl: '/pages/wenjuan/index?type=3', imgUrl: '../../image/banner_04.png' },
+      { linkUrl: '/pages/wenjuan/index?type=4', imgUrl: '../../image/banner_03.png' }
     ],
     daibiaoModuleData:[
       { name:'抗压训练', linkUrl: '/pages/user/index', imgUrl: '../../image/daibiao_module_01.png' },
