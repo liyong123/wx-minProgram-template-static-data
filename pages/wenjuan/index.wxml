@@ -1,29 +1,42 @@
 <!--问卷测试pages/wenjuan/index.wxml-->
 <view class='container'>
-   <view class='tip_grp'>
-      <text class='iconfont iconbell'></text>
-      <text>根据您最近一周的实际感觉，选择一个最符合您的选项！</text>
+   <view class='tip_line_all'>
+    <view class='tip_grp'>
+        <text class='iconfont iconbell'></text>
+        <text>根据您最近一周的实际感觉，选择一个最符合您的选项！</text>
+    </view>
+    <view class='jindu_line_grp'>
+        <view class='shiti_type_grp'>
+          <text>{{shiti_content[shiti_id].shiti_type === 0? "单选题": "多选题"}}</text>
+          <view>
+              <text>{{shiti_id+1}}</text>
+              <text>/{{shiti_content.length}}</text>
+          </view>
+        </view>
+        <view class='line_grp'>
+          <text style='width:{{line_percent}}%'></text>
+        </view>
+    </view>
    </view>
-   <view class='jindu_line_grp'>
-      <view>
-         <text>{{shiti_content[shiti_id].shiti_type === 0? "单选题": "多选题"}}</text>
-         <view>
-            <text>{{shiti_id+1}}</text>
-            <text>/{{shiti_content.length}}</text>
-         </view>
-      </view>
-   </view>
-   <view>
-      <view>{{shiti_content[shiti_id].title}}</view>
-      <view>
-         <view wx:for="{{shiti_content[shiti_id].content}}" wx:key="shiti_content">
+   <form class='shiti_content_grp'>
+      <view class='shiti_title'><text>{{shiti_content[shiti_id].title}}</text></view>
+      <view class='shiti_choose'>
+        <checkbox-group wx:if="{{shiti_content[shiti_id].shiti_type === 1}}" bindchange="checkboxChange" >
+          <view class='shiti_choose_one' wx:for="{{shiti_content[shiti_id].content}}" wx:key="shiti_content">
             <text>{{item.name}}</text>
-         </view>
+            <checkbox value="{{item.id}}" checked='{{item.checked}}' bindtap='checkboxClick' data-checked ="{{item.checked}}" />
+          </view>
+        </checkbox-group>
+        <radio-group wx:else bindchange="radioChange">
+            <view class='shiti_choose_one' wx:for="{{shiti_content[shiti_id].content}}" wx:key="shiti_content">
+              <text>{{item.name}}</text>
+              <radio  value="{{item.id}}"  checked='{{item.checked}}'></radio>
+            </view>
+        </radio-group>
       </view>
-   </view>
-
-   <view>
-      <button bindtap="lastQuestion">上一题</button>
-      <button bindtap="nextQuestion">下一题</button>
-   </view>  
+      <view class='button_grp'>
+          <button bindtap="lastQuestion" >上一题</button>
+          <button bindtap="nextQuestion" >下一题</button>
+      </view>
+   </form>  
 </view>

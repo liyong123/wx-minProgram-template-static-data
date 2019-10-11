@@ -9,29 +9,32 @@ Page({
     shiti_content: [
       { 
         item_id:0, 
+        type: 0,
         result: [],
-        shiti_type: 0,
+        shiti_type: 1,
         title: "我觉得比平常容易紧张或着急",
         content: [
-          { id: 0, name: '没有或偶尔' },
-          { id: 1, name: '有时' },
-          { id: 2, name: '经常' },
-          { id: 3, name: '总是如此' }
+          { id: 0, name: '没有或偶尔', checked: false },
+          { id: 1, name: '有时', checked: false },
+          { id: 2, name: '经常', checked: false  },
+          { id: 3, name: '总是如此', checked: false  }
         ] 
       },
       {
         item_id: 1,
-        shiti_type: 1,
-        result: [0,1],
+        shiti_type: 0,
+        type: 0,
+        result: [],
         title: "我觉得比平常容易愤怒",
         content: [
-          { id: 0, name: '没有或偶尔' },
-          { id: 1, name: '有时' },
-          { id: 2, name: '经常' },
-          { id: 3, name: '总是如此' }
+          { id: 0, name: '没有或偶尔', checked: false  },
+          { id: 1, name: '有时', checked: false  },
+          { id: 2, name: '经常', checked: false  },
+          { id: 3, name: '总是如此', checked: false  }
         ]
       }
-    ]
+    ],
+    line_percent: 0,
 
   },
 
@@ -57,6 +60,10 @@ Page({
           title: '家长保障测试'
         })
       }
+
+      
+      
+
   },
 
   /**
@@ -70,7 +77,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-     //todo: 访问试题接口...
+    var that = this;
+    //todo: 访问试题接口...
+    that.linePercent()
+
   },
 
   /**
@@ -110,10 +120,18 @@ Page({
   //下一题
   nextQuestion: function () {
     var that = this;
+
+
+    const contentNumber = this.data.shiti_content[this.data.shiti_id].content;
+    
+
+
+
     if (that.data.shiti_id < that.data.shiti_content.length - 1) {
       that.setData({
         shiti_id: that.data.shiti_id + 1
       });
+      that.linePercent()
     }
   },
   //上一题
@@ -123,6 +141,82 @@ Page({
       this.setData({
         shiti_id: that.data.shiti_id - 1
       });
+      that.linePercent()
     }
+  },
+  //进度条
+  linePercent: function() {
+    var  that = this;
+    that.setData({
+      line_percent: ((that.data.shiti_id + 1) / that.data.shiti_content.length) * 100
+    })
+  },
+
+  //点击表单
+  formSubmit: function (e) {
+    const params = e.detail.value;
+  },
+  
+  radioChange: function(e) {
+    this.setData({
+      itemChooseValue:e.detail.value
+    });
+    
+    const contentNumber = this.data.shiti_content[this.data.shiti_id].content;
+    const radioV = e.detail.value;
+    for (var i = 0; i < contentNumber.length; i ++) {
+      if(radioV == contentNumber[i].id){
+        contentNumber[i].checked = true;
+      }else {
+        contentNumber[i].checked = false
+      }
+    }
+    console.log("radioV:", e.detail.value)
+  },
+
+  checkboxChange: function(e) {
+    this.setData({
+      itemChooseValue: e.detail.value
+    })
+
+    const contentNumber = this.data.shiti_content[this.data.shiti_id].content;
+    const result = this.data.shiti_content[this.data.shiti_id].result; //result：上一题是否选过
+    const radioV = e.detail.value;
+
+    if(result.length <= 0 ) {
+      if( radioV.length > 0) {
+        for (var k = 0; k < radioV.length; k++) {
+          for (var i = 0; i < contentNumber.length; i++) {
+            if (parseInt(radioV[k]) == contentNumber[i].id) {
+
+              if (!contentNumber[i].checked) {
+                contentNumber[i].checked = true;
+              } else {
+                contentNumber[i].checked = false;
+              }
+
+            }
+          }
+        }
+      }else {
+        for (var i = 0; i < contentNumber.length; i++) {
+          contentNumber[i].checked = false;
+        }
+        
+      }
+      
+    }
+
+    
+    
+    console.log("contentNumber:", contentNumber)
+    
+    console.log("checkboxV:", e.detail.value)
+
+    console.log("e:", e)
+  },
+  sss: function(e){
+    debugger
   }
+
 })
