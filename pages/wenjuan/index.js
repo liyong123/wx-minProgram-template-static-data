@@ -212,11 +212,11 @@ Page({
     console.log("contentNumber:", contentNumber)
     
     console.log("checkboxV:", e.detail.value)
-
-    console.log("e:", e)
   },
-  sss: function(e){
-    debugger
+
+
+  checkboxClick: function(e){
+    
   }
 
 })

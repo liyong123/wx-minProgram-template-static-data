@@ -22,7 +22,7 @@
             <text>8</text>
          </view>
       </view>
-      <navigator class='jxs_rz'>
+      <navigator url='/pages/user/sqjxs/index' class='jxs_rz'>
          <text>申请经销商认证</text>
       </navigator>
    </view>
@@ -74,7 +74,7 @@
                 <image src='../../image/user_sq_zj_rz.png'></image>
                 <text>申请专家认证</text>
               </view>
-              <navigator class="iconfont iconnext"></navigator>
+              <navigator url='/pages/user/sqzj/index' class="iconfont iconnext"></navigator>
             </view>
        </view>
    </view>

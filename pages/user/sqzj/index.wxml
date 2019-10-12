@@ -1,0 +1,29 @@
+<!--申请专家pages/user/sqzj/index.wxml-->
+<view class='container' style='position: relative'>
+   <view class='sq_content'>
+      <view class='sq_title'>请填写专家认证资料</view>
+      <form class='form_content' bindsubmit='formSubmit'>
+        <view class='form_item_grp'>
+          <input type='text' name="telephone" placeholder='您的真实姓名' placeholder-style='color: #999' />
+          <view class='upload_grp'>
+             <view>
+               <text>请上传已获得的证书</text>
+               
+             </view>
+          </view>
+        </view>
+
+
+      </form>
+   </view>
+   <view>
+      <view class='btn_grp'>
+          <button formType="submit">提交资料 等待审核</button>
+        </view>
+      <view class='sq_sm'>
+         <text>提交即表明您已同意</text>
+         <navigator>《考保宝经销商服务协议》</navigator>
+      </view>
+   </view> 
+</view>
+

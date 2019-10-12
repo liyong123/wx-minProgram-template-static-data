@@ -11,6 +11,8 @@
     "pages/user/myMessage/index",
     "pages/user/myAddress/index",
     "pages/user/myAddress/newAddress/index",
+    "pages/user/sqjxs/index",
+    "pages/user/sqzj/index",
     "pages/login/login",
     "pages/echarts/index",
     "pages/jiaqun/index",
