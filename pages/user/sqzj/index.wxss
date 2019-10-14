@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 134rpx;
 }
 .form_content .form_item_grp {
   display: flex;
@@ -27,7 +28,7 @@
   height: 90rpx;
   width: 100%;
   padding: 0 10rpx;
-  font-size: 28rpx;
+  font-size: 30rpx;
   color: #181818
 }
 .btn_grp {
@@ -50,4 +51,78 @@
 }
 .sq_sm  navigator {
   color: #28bff1
+}
+.upload_zs_grp {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30rpx;
+}
+.upload_zs_grp >text {
+  font-size: 30rpx;
+  color: #999;
+  margin: 30rpx 0 40rpx;
+}
+
+.upload_img_grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.upload_img_grp view {
+  width: 270rpx;
+  height: 172rpx;
+  background: #fff0f1;
+  position: relative;
+}
+.upload_img_grp view> text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50rpx;
+  font-size: 50rpx;
+  color: #fedbdb;
+  height: 50rpx;
+  margin-top: -25rpx;
+  margin-left: -25rpx;
+   
+}
+.upload_img_grp view> image {
+  width: 270rpx;
+  height: 172rpx;
+}
+.upload_js_pic_grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.upload_js_pic_grp >view.jl_content {
+  width: 270rpx;
+  display: flex;
+  flex-direction: column;
+}
+.upload_js_pic_grp >view.jl_content >text {
+  font-size: 30rpx;
+  color: #999;
+  margin-bottom: 30rpx
+}
+.upload_js_pic_grp >view.jl_content >view {
+  width: 270rpx;
+  height: 172rpx;
+  background: #fff0f1;
+  position: relative;
+}
+.upload_js_pic_grp >view.jl_content > view >text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50rpx;
+  font-size: 50rpx;
+  color: #fedbdb;
+  height: 50rpx;
+  margin-top: -25rpx;
+  margin-left: -25rpx;
+}
+.upload_js_pic_grp >view.jl_content > view > image {
+  width: 270rpx;
+  height: 172rpx;
 }

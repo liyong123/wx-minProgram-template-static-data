@@ -1,0 +1,36 @@
+<!--心理调节测试结果pages/wenjuanresult/xltjcs/index.wxml-->
+<view class='container'>
+   <view class='header_bg'>
+   </view>
+   <view class='result_grp'>
+      <view class='cs_result'>测试结果</view>
+      <view class='cs_score'>
+         <image mode='widthFix' src='{{ceResultBg}}' />
+         <view class='score_grp'>
+            <text>{{score}}</text>
+            <text>分</text>
+         </view>
+      </view>
+      <view class='ce_result_font'>{{ceResultFont}}</view> 
+      <view class='solve_grp'>
+         <text>自主解决方案</text>
+         <view>{{zzjjfa}}</view>
+      </view>
+   </view>
+  <view class='cp_solve_grp'>
+      <view class='solve_title'>
+        <view class='title_bg'></view>
+        <view class='title_main'>
+          <text> </text>
+          <text>产品解决方案</text>
+        </view>
+        <navigator url="{{cp_more}}">
+          <text>更多</text>
+          <text class='iconfont iconnext'></text>
+        </navigator>
+      </view>
+      <view class='solve_main_content'>
+      
+      </view>
+  </view>
+</view>

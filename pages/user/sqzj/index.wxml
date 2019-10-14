@@ -5,10 +5,33 @@
       <form class='form_content' bindsubmit='formSubmit'>
         <view class='form_item_grp'>
           <input type='text' name="telephone" placeholder='您的真实姓名' placeholder-style='color: #999' />
-          <view class='upload_grp'>
-             <view>
-               <text>请上传已获得的证书</text>
-               
+          <view class='upload_zs_grp'>
+            <text>请上传已获得的证书</text>
+            <view class='upload_img_grp'>
+              <view bindtap="uploadPic" data-index="1">
+                 <text wx:if= "zszm_add_show"  class='iconfont iconadd'></text>
+                 <image  src='{{zszm}}' />
+              </view>
+              <view bindtap="uploadPic" data-index="2">
+                 <text class='iconfont iconadd'></text>
+                 <image  src='{{zsfm}}' />
+              </view>
+            </view>
+          </view>
+          <view class='upload_js_pic_grp'>
+             <view class='jl_content'>
+                <text>请上传个人简历</text>
+                <view>
+                    <text  class='iconfont iconadd'></text>
+                    <image  src='{{grjl}}' />
+                </view>
+             </view>
+             <view class='jl_content'>
+                <text>请上传近期证件照</text>
+                <view>
+                    <text  class='iconfont iconadd'></text>
+                    <image  src='{{jqzjz}}' />
+                </view>
              </view>
           </view>
         </view>

@@ -1,0 +1,134 @@
+/* pages/wenjuanresult/xltjcs/index.wxss */
+.header_bg {
+  background: #f93436;
+  height: 360rpx;
+  border-bottom-left-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+}
+.result_grp {
+  height: 920rpx;
+  margin: -320rpx 50rpx 40rpx;
+  box-shadow: #fdccd1 0rpx 0rpx 20rpx 2rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cs_result {
+  margin-top: 30rpx;
+  font-size: 34rpx;
+  letter-spacing: 2rpx;
+  color: #fd435a;
+  font-weight: bold
+}
+.cs_score {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx
+}
+.cs_score image {
+  width: 220rpx;
+  height: 300rpx;
+  margin-right: 56rpx;
+}
+.cs_score .score_grp {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 30rpx;
+}
+.cs_score .score_grp > text:first-child{
+   width: 116rpx;
+   height: 100rpx;
+   color: #f4384c;
+   font-size: 90rpx;
+   font-weight: bold;
+   margin-right: 6rpx;
+}
+.cs_score .score_grp > text:last-child{
+  color: #f4384c;
+  font-size: 38rpx
+}
+.ce_result_font {
+  font-size: 28rpx;
+  color: #999;
+  margin: 0 84rpx;
+  letter-spacing: 2rpx;
+  line-height: 50rpx;
+  padding-bottom: 6rpx;
+  border-bottom: solid 1rpx #eee;
+  margin-bottom: 10rpx;
+}
+.solve_grp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.solve_grp > text {
+  margin: 0 84rpx 14rpx;
+  font-size: 32rpx;
+  color: #f4384c;
+
+}
+.solve_grp > view { 
+  font-size: 26rpx;
+  color: #333;
+  height: 350rpx;
+  overflow-y: auto;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+  margin: 0 84rpx 40rpx;
+}
+.cp_solve_grp {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14rpx;
+  margin:0 50rpx;
+}
+.solve_title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.solve_title .title_bg {
+  width:0;
+  height:0;
+  border-top: 60rpx solid #febece;
+  border-right: 118rpx solid transparent;
+}
+
+.solve_title .title_main {
+  position: absolute;
+  z-index: 99;
+  left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.solve_title .title_main text:first-child {
+  background: #ed2c3f;
+  width: 6rpx;
+  height: 30rpx;
+  margin-right: 14rpx;
+}
+
+.solve_title .title_main text:last-child {
+  font-size: 32rpx;
+  color: #181818;
+  letter-spacing: 2rpx;
+}
+.solve_title navigator {
+  color: #999;
+  font-size: 28rpx;
+}
+.solve_title navigator text:first-child {
+  margin-right: 6rpx;
+}
+.solve_title navigator text.iconfont {
+  font-size: 22rpx
+}
