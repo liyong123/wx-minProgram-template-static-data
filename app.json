@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/wenjuanresult/xltjcs/index",
     "pages/temporary/index",
     "pages/index/index",
     "pages/index/expert/index",
@@ -17,7 +16,13 @@
     "pages/login/login",
     "pages/echarts/index",
     "pages/jiaqun/index",
-    "pages/wenjuan/index"
+    "pages/wenjuan/index",
+    "pages/wenjuanresult/xltjcs/index",
+    "pages/wenjuanresult/stztcs/index",
+    "pages/wenjuanresult/jzbzcs/index",
+    "pages/wenjuanresult/xxghcs/index"
+
+     
   ],
   "window": {
     "navigationBarBackgroundColor": "#f93436",

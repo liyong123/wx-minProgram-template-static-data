@@ -1,4 +1,4 @@
-// pages/wenjuanresult/xltjcs/index.js
+// pages/wenjuanresult/jzbzcs/index.js
 Page({
 
   /**
@@ -45,13 +45,20 @@ Page({
     otherDatas: [
       {
         imgUrl: "../../../image/header_img.jpg",
-        title: "学姐陪伴",
-        abstract: "定制化家庭解决方案"
+        title: "家长服务",
+        abstract: "孩子学习情况全面掌握"
       },
       {
         imgUrl: "../../../image/header_img.jpg",
-        title: "家庭心理服务",
-        abstract: "定制化家庭解决方案"
+        title: "家长活动",
+        abstract: "160万家长的选择"
+      }
+    ],
+    otherDatas2: [
+      {
+        imgUrl: "../../../image/header_img.jpg",
+        title: "家庭高考保证",
+        abstract: "全方位的对学生的学习生涯进行科学的梳理、引导和管理。"
       }
     ]
   },

@@ -1,4 +1,4 @@
-// pages/wenjuanresult/xltjcs/index.js
+// pages/wenjuanresult/stztcs/index.js
 Page({
 
   /**
@@ -6,7 +6,7 @@ Page({
    */
   data: {
     ceResultBg: "../../../image/user_order_message01.png",
-    score: '78',
+    score: '98',
     ceResultFont: "你的焦虑倾向到了中等水平。或许是生活、工作或学业压力所致，应该设法放松自己，尽快调节。",
     zzjjfa: "研究者让参与者对11种",
     solveGoodsData: [
@@ -29,29 +29,24 @@ Page({
       {
         headerImg: "../../../image/header_img.jpg",
         name: "王小丫",
-        touxian: "心理咨询师"
+        touxian: "一级营养师"
       },
       {
         headerImg: "../../../image/header_img.jpg",
         name: "王小丫",
-        touxian: "心理咨询师"
+        touxian: "一级营养师"
       },
       {
         headerImg: "../../../image/header_img.jpg",
         name: "王丫",
-        touxian: "心理咨询师"
+        touxian: "一级营养师"
       }
     ],
     otherDatas: [
       {
         imgUrl: "../../../image/header_img.jpg",
-        title: "学姐陪伴",
-        abstract: "定制化家庭解决方案"
-      },
-      {
-        imgUrl: "../../../image/header_img.jpg",
-        title: "家庭心理服务",
-        abstract: "定制化家庭解决方案"
+        title: "家庭营养保证",
+        abstract: "营养配餐新定义"
       }
     ]
   },

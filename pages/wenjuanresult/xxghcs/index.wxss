@@ -1,4 +1,4 @@
-/* pages/wenjuanresult/xltjcs/index.wxss */
+/* pages/wenjuanresult/xxghcs/index.wxss */
 .header_bg {
   background: #f93436;
   height: 360rpx;
@@ -276,6 +276,19 @@
   height: 170rpx;
   border-radius: 8rpx;
   position: relative;
+}
+
+.other_content4 .other_one:first-child {
+  width: 60%;
+}
+
+.other_content4 .other_one:last-child {
+  width: 38%;
+}
+
+.other_content2  .other_one {
+  width: 100%;
+  height: 266rpx
 }
 .other_content .other_one image{
   width: 100%;
