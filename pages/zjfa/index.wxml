@@ -1,0 +1,38 @@
+<!--专家方案pages/zjfa/index.wxml-->
+<view class='container'>
+  <scroll-view scroll-x="{{scrollX}}" class="scroll_view_all">
+    <block wx:for="{{ tabList }}" wx:key="tablist">
+      <view class="tab_item" data-current="{{ item.value }}" bindtap="swichNav">
+         <view>
+           <text class="{{( valueEqual && (selectedValue == item.value)) ? 'selectedName' : 'selectedName2' }}">{{item.name}}</text>
+           <text class="iconfont {{( valueEqual && (selectedValue == item.value)) ? 'iconup' : 'icondown' }} "></text>    
+         </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class='expert_content_all'>
+     <view class='expert_one' wx:for="{{expertAll}}" wx:key="expertAll">
+       <image  src='{{item.imgUrl}}'/>
+       <view class='expert_mes'>
+          <view class='name_address_grp'>
+             <view>
+                <text>{{item.name}}</text>
+                <text>专家</text>
+             </view>
+             <view>
+                <text class='iconfont iconadress'></text>
+                <text>{{item.address}}</text>
+             </view>
+          </view>
+          <view class='abstract_grp'>{{item.abstract}}</view>
+          <view class='goodField'>
+            <text wx:for="{{item.goodField}}" wx:for-item="item2" wx:key='goodField'>{{item2}}</text>
+          </view>
+          <view class='value_grp'>
+             <text>{{item.value}}/次</text> 
+             <navigator>向她咨询</navigator>
+          </view>
+       </view>
+     </view>
+  </view>
+</view>

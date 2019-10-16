@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/zjfa/index",
     "pages/temporary/index",
     "pages/index/index",
     "pages/index/expert/index",

@@ -1,0 +1,119 @@
+/* pages/zjfa/index.wxss */
+.scroll_view_all {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: solid 1rpx #ddd;
+  padding: 16rpx 18rpx;
+}
+.scroll_view_all view.tab_item{
+  display: inline-block;
+  margin-right: 50rpx;
+  color: #181818;
+  font-size: 26rpx;
+}
+
+.scroll_view_all view.tab_item > view {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.scroll_view_all view.tab_item > view text.selectedName2 {
+  color: #181818;
+} 
+.scroll_view_all view.tab_item > view text.selectedName {
+  color: #fb3648
+} 
+.scroll_view_all view.tab_item .iconfont {
+  font-size: 10rpx; 
+  margin-left: 10rpx;
+}
+.scroll_view_all view.tab_item .iconfont.iconup {
+  color: #fb3648
+}
+.expert_content_all {
+  display: flex;
+  flex-direction: column;
+}
+.expert_one {
+  display: flex;
+  flex-direction: row;
+  padding: 28rpx 0;
+  margin: 0 30rpx;
+  border-bottom: solid 1rpx #ddd;
+  justify-content: space-between;
+  align-items: flex-start
+}
+.expert_one image{
+   width: 174rpx;
+   height: 174rpx;
+   border-radius: 100rpx;
+   margin-right: 38rpx;
+}
+.expert_mes {
+   display: flex;
+   flex-direction: column;
+   width: 68%
+}
+.name_address_grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name_address_grp > view:first-child {
+  color: #181818;
+  font-size: 32rpx;
+}
+.name_address_grp >  view:first-child > text:last-child { 
+  color: #777;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.name_address_grp >  view:last-child > text:first-child {
+  font-size: 28rpx;
+  color: #666;
+}
+.name_address_grp >  view:last-child > text:last-child {
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+.abstract_grp {
+  height: 110rpx;
+  overflow: hidden;
+  color: #666;
+  font-size: 22rpx;
+  line-height: 36rpx;
+  margin: 20rpx 0 14rpx 0;
+}
+.goodField text {
+  background: #ececec;
+  padding: 4rpx  24rpx;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  color: #777;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.value_grp {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  justify-content: space-between;
+  align-items: flex-end
+}
+.value_grp text:first-child{
+  color: #f8374a;
+  font-size: 26rpx;
+  font-weight: 500
+}
+.value_grp navigator{
+  color: #fff;
+  font-size: 24rpx;
+  width: 130rpx;
+  height: 50rpx;
+  background: #f8374a;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 4rpx;
+}
