@@ -10,12 +10,13 @@ Page({
     
   },
   onShow: function(){
-    // this.getUserLocation();
+    
     if (!wx.getStorageSync("token")) {//此处判断不合适
       wx.navigateTo({
         url: '/pages/login/login',
       })
     }
+    this.getUserLocation();
 
 
     const userRole = wx.getStorageSync("userRole") ;//获取用户角色，决定显示哪个tabbar

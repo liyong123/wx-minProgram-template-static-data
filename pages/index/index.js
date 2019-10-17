@@ -66,7 +66,7 @@ Page({
   },
   onShow: function(){
    
-  },
+  }
 
  
  

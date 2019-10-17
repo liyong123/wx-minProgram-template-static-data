@@ -42,7 +42,7 @@ Page({
       title: "正在登录",
       mask: true
     });
-    console.log("e:",e.detail.userInfo);
+    console.log("userInfo:",e.detail.userInfo);
     // 执行微信登录
     wx.login({
       success: function (res) {
