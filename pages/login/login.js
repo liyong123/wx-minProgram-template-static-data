@@ -70,7 +70,7 @@ Page({
         //临时模拟各种情况：
         wx.hideLoading();
         wx.setStorageSync("token", "ssssssss");
-        wx.setStorageSync("userRole", "0");
+        wx.setStorageSync("userRole", "1");
 
 
         wx.navigateTo({

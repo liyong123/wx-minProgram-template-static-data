@@ -29,7 +29,8 @@ Component({
     isShow: false,
     transparent: true,
     tabBarLinks : [
-      'pages/index/index'
+      'pages/index/index',
+      "pages/shop/shopCar/index"
     ],
 
   },

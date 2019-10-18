@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/zjfa/index",
     "pages/temporary/index",
     "pages/index/index",
     "pages/index/expert/index",
     "pages/shop/index",
     "pages/shop/goodsDetail/index",
     "pages/shop/confirmOrders/index",
+    "pages/shop/shopCar/index",
     "pages/user/index",
     "pages/user/myState/index",
     "pages/user/myMessage/index",
@@ -21,7 +21,10 @@
     "pages/wenjuanresult/xltjcs/index",
     "pages/wenjuanresult/stztcs/index",
     "pages/wenjuanresult/jzbzcs/index",
-    "pages/wenjuanresult/xxghcs/index"
+    "pages/wenjuanresult/xxghcs/index",
+    "pages/zjfa/index",
+    "pages/zjfa/zjdetail/index"
+    
     
 
      
