@@ -52,6 +52,76 @@ Page({
       { name: "北京", city_id: "01" },
       { name: "上海", city_id: "02" },
       { name: "深圳", city_id: "03" }
+    ],
+    sexAll: [
+      { sexType: "不限", id: '0' },
+      { sexType: "男性", id: '1' },
+      { sexType: "女性", id: '2' }
+    ],
+    consultationAll: [
+      { consultationType: "不限" },
+      { consultationType: "面对面" },
+      { consultationType: "视频" },
+    ],
+    timeAll: [
+      { 
+        weekDay: "明天", 
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+          { startTime: '09:00', endTime: '09:50' }
+        ]  
+      },
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+          { startTime: '09:00', endTime: '09:50' }
+        ]
+      },
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+          { startTime: '09:00', endTime: '09:50' }
+        ]
+      },
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+          { startTime: '09:00', endTime: '09:50' }
+        ]
+      },
+
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+        
+        ]
+      },
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+        
+        ]
+      },
+      {
+        weekDay: "明天",
+        date: '09.03',
+        hourAll: [
+          { startTime: '09:00', endTime: '09:50' },
+         
+        ]
+      },
+      
     ]
 
   },
@@ -213,6 +283,7 @@ Page({
 
   },
 
+  // scroll-view 每项点击
   swichNav: function(e) {
     const that = this;
     const oldV = that.data.selectedValue;
@@ -227,7 +298,16 @@ Page({
       selectedValue: current,
       modalShow: true
     })
+  },
+  //选择其他城市
+  chooseOtherCity: function(e) {
 
-
+  },
+  //刷新定位城市
+  updateCity: function() {
+    this.getLocation()
+  },
+  sliderChange: function(e) {
+    const v = e.detail.value;
   }
 })
